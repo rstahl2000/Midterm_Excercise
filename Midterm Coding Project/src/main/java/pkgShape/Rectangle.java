@@ -3,20 +3,44 @@ package pkgShape;
 public class Rectangle extends Shape {
 	private int iWidth;
 	private int iLength;
-	public Rectangle(int width, int length) {
+	public Rectangle(int width, int length) throws IllegalArgumentException{
+		if (iWidth<=0) {
+			throw new IllegalArgumentException("Width must be positive.");
+		}
+		if (iLength<=0) {
+			throw new IllegalArgumentException("Length must be positive.");
+		}
 		iWidth=width;
+		iLength=length;
+	}
+	public int getWidth() {
+		return iWidth;
+	}
+	public void setWidth(int width) throws IllegalArgumentException{
+		if (iWidth<=0) {
+			throw new IllegalArgumentException("Width must be positive.");
+		}
+		iWidth=width;
+	}
+	public int getLength() {
+		return iLength;
+	}
+	public void setLength(int length) throws IllegalArgumentException{
+		if (iLength<=0) {
+			throw new IllegalArgumentException("Length must be positive.");
+		}
 		iLength=length;
 	}
 	@Override
 	public double area() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return (double)iWidth*iLength;
 	}
 
 	@Override
 	public double perimeter() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return (double)(iWidth*2+iLength*2);
 	}
 
 }

@@ -6,6 +6,7 @@ public class SortByArea implements Comparator<Cuboid> {
 SortByArea() {
 	
 }
+@Override
 public int compare(Cuboid compare1, Cuboid compare2){
 	if(compare1.area()<compare2.area()) {
 		return -1;

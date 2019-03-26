@@ -2,10 +2,13 @@ package pkgTestShape;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+import java.util.Collection;
 
 import org.junit.Test;
 
 import pkgShape.Cuboid;
+import pkgShape.SortByArea;
 public class CuboidTest {
 
 	@Test

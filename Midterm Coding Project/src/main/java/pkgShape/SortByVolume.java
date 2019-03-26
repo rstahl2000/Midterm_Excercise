@@ -6,6 +6,7 @@ public class SortByVolume implements Comparator<Cuboid> {
 SortByVolume(){
 	
 }
+@Override
 public int compare(Cuboid compare1, Cuboid compare2){
 	if(compare1.volume()<compare2.volume()) {
 		return -1;

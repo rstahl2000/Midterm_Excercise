@@ -1,5 +1,6 @@
 package pkgShape;
 
+import java.util.Comparator;
 
 public class Cuboid extends Rectangle {
 	private int iDepth;

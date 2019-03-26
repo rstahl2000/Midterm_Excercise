@@ -1,5 +1,6 @@
 package pkgShape;
 
+
 public class Cuboid extends Rectangle {
 	private int iDepth;
 	public Cuboid(int width, int length, int depth) {
@@ -26,5 +27,6 @@ public class Cuboid extends Rectangle {
 	public double area() {
 		return (double)(2*super.getWidth()*super.getWidth()+2*super.getWidth()*iDepth+2*super.getLength()*iDepth);
 	}
+	
 	
 }

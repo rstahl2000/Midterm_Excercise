@@ -4,14 +4,14 @@ public class Rectangle extends Shape implements Comparable<Rectangle> {
 	private int iWidth;
 	private int iLength;
 	public Rectangle(int width, int length) throws IllegalArgumentException{
+		iWidth=width;
+		iLength=length;
 		if (iWidth<=0) {
 			throw new IllegalArgumentException("Width must be positive.");
 		}
 		if (iLength<=0) {
 			throw new IllegalArgumentException("Length must be positive.");
 		}
-		iWidth=width;
-		iLength=length;
 	}
 	public int getWidth() {
 		return iWidth;

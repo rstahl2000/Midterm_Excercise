@@ -31,5 +31,8 @@ public class Cuboid extends Rectangle {
 		return (double)(2*super.getWidth()*super.getLength()+2*super.getWidth()*iDepth+2*super.getLength()*iDepth);
 	}
 	
+	public int compareTo(Cuboid comparedCuboid) {
+		return this.compareTo(comparedCuboid);
+	}
 	
 }

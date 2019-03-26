@@ -2,10 +2,10 @@ package pkgTestShape;
 
 import static org.junit.Assert.*;
 
+
 import org.junit.Test;
 
 import pkgShape.Cuboid;
-
 public class CuboidTest {
 
 	@Test
